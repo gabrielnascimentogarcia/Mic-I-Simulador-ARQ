@@ -16,8 +16,8 @@ Simulador da arquitetura MIC-1 com sistema de cache hierárquico. Desenvolvido c
 ### Rodando o projeto
 
 ```bash
-git clone https://github.com/gabrielnascimentogarcia/teste2.git
-cd teste2
+git clone https://github.com/gabrielnascimentogarcia/Mic-I-Simulador-ARQ.git
+cd Simulador-Arq
 python app.py
 ```
 
