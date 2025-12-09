@@ -212,6 +212,10 @@ class MIC1Hardware:
         #Separa Opcode e Operando
         opcode_4 = (instruction >> 12) & 0b1111
         operand_12 = instruction & 0b111111111111
+
+        #Configurando TIR para debug
+        self.registers['TIR'] = opcode_4
+        self.micro_log.append(f"[DECODE] TIR <- Opcode ({bin(opcode_4)})")
         
         #Etapa 2: DECODE & EXECUTE
         #Implementação do instruction set com verificação binária
